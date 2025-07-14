@@ -13,7 +13,11 @@ body {
     align-items: center;
     justify-content: center;
 }
-
+.images-comparison img{
+    padding: 0.5rem;
+    background-color: #003b8b;
+    border-radius: 10%;
+}
 .hero-text {
     max-width: 700px;
     text-align: left;
