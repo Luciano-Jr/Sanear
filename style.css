@@ -85,13 +85,13 @@ footer{
         font-size: larger;
         background-color: #003b8b;
         color: white;
-        padding: 30px 20px;
+        padding: 15px 10px;
         display: block;
         align-items: center;
         text-align: center;
     }
-    #foto_hero{
-       
+    .hero-text{
+        text-align: center;
     }
 
 }
