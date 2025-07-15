@@ -171,24 +171,7 @@ footer{
       left: -15px;
     }
 
-    /* Responsivo: tudo empilhado em telas pequenas */
-    @media (max-width: 768px) {
-      .step {
-        width: 100%;
-        left: 0 !important;
-        text-align: left !important;
-        padding-left: 3rem;
-      }
 
-      .step::before {
-        left: -15px !important;
-        right: auto;
-      }
-
-      .timeline::before {
-        left: 15px;
-      }
-    }
 @media (max-width: 768px) {
         .hero {
         font-size: larger;
