@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
 }
 .hero {
     font-size: larger;
@@ -34,12 +34,19 @@ body {
     background-color: white;
     text-align: center;
 }
+
+.section2 {
+    padding: 30px 20px;
+    background-color: #003b8b;
+    text-align: center;
+    color: white;
+}
 .cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 .card {
     max-width: 250px;
@@ -48,6 +55,16 @@ body {
     border: 1px solid #ccc; /* Borda cinza clara */
     border-radius: 8px;      /* Bordas levemente arredondadas (opcional) */
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Sombra leve (opcional) */
+}
+.card2 {
+    max-width: 250px;
+    padding: 1rem;
+    margin: auto 3rem;
+    border: 2px solid #194b92; /* Borda cinza clara */
+    border-radius: 8px;      /* Bordas levemente arredondadas (opcional) */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Sombra leve (opcional) */
+    background-color: #003b8b;
+    color: white;
 }
 
 .images-comparison {
@@ -86,6 +103,92 @@ footer{
     text-align: center;
     padding: 1rem;
 }
+ .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 1rem auto;
+    }
+
+    .timeline::before {
+      content: '';
+      position:absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      width: 4px;
+      height: 90%;
+      background-color: #003b8b;
+
+    }
+
+    .step {
+      position: relative;
+      width: 50%;
+      padding: 1rem 2rem;
+      box-sizing: border-box;
+    }
+
+    .step::before {
+      content: attr(data-step);
+      position: absolute;
+      top: 1rem;
+      width: 30px;
+      height: 30px;
+      background-color: #003b8b;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      line-height: 30px;
+      border-radius: 50%;
+      z-index: 2;
+    }
+
+    .step h3 {
+      margin: 0 0 5px;
+      color: #2c3e50;
+    }
+
+    .step p {
+      margin: 0;
+      color: #555;
+    }
+
+    .left {
+      left: 0;
+      text-align: right;
+    }
+
+    .left::before {
+      right: -15px;
+    }
+
+    .right {
+      left: 50%;
+      text-align: left;
+    }
+
+    .right::before {
+      left: -15px;
+    }
+
+    /* Responsivo: tudo empilhado em telas pequenas */
+    @media (max-width: 768px) {
+      .step {
+        width: 100%;
+        left: 0 !important;
+        text-align: left !important;
+        padding-left: 3rem;
+      }
+
+      .step::before {
+        left: -15px !important;
+        right: auto;
+      }
+
+      .timeline::before {
+        left: 15px;
+      }
+    }
 @media (max-width: 768px) {
         .hero {
         font-size: larger;
