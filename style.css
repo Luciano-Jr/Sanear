@@ -35,7 +35,7 @@ body {
 }
 .azul{
   background-color: #00AFFF;
-  color: white;
+  color: black;
 }
 .video-item iframe {
     width: 23rem;
@@ -49,7 +49,7 @@ body {
     padding: 30px 20px;
     background-color: #003b8b;
     text-align: center;
-    color: white;
+    color: wbhite;
 }
 .cards {
     display: flex;
@@ -155,12 +155,12 @@ footer{
 
     .step h3 {
       margin: 0 0 5px;
-      color: white;
+      color: black;
     }
 
     .step p {
       margin: 0;
-      color: white;
+      color: black;
     }
 
     .left {
