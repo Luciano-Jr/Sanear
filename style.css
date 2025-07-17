@@ -31,8 +31,18 @@ body {
 }
 .section {
     padding: 30px 20px;
-    background-color: white;
     text-align: center;
+}
+.azul{
+  background-color: #00AFFF;
+  color: white;
+}
+.video-item iframe {
+    width: 23rem;
+    height: 40rem;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .section2 {
@@ -145,12 +155,12 @@ footer{
 
     .step h3 {
       margin: 0 0 5px;
-      color: #2c3e50;
+      color: white;
     }
 
     .step p {
       margin: 0;
-      color: #555;
+      color: white;
     }
 
     .left {
